@@ -1,0 +1,189 @@
+<!doctype.html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>
+Technology Trends
+</title>
+<link rel="stylesheet" href ="style.css">
+</head>
+<style>
+body{
+font-family:Sans-serif;
+background-image:url("https://img.freepik.com/free-vector/safe-data-storage-service-cloud_1284-32735.jpg" alt="cloudcomputing related image");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+}
+.content-container{
+text-align:center;
+}
+.title{
+color:blue;
+font-size:24px;
+margin:0px;
+padding:0px;
+padding-top:30px;
+}
+img{
+padding-right: 70px;
+padding-left:20px;
+padding-top:100px;
+padding-bottom:100px;
+width:160%;
+height:400px;
+}
+.container{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+}
+ .bullet-points {
+     display:flex;
+     justify-content:space-around;
+     padding-top:70px;
+     padding-right:50px;
+}
+       }
+    .bullet-points ul {
+      padding-right:20px;
+      list-style-type: disc;
+    }
+#first-column,#second-column{
+padding:40px;
+}
+#quiz-container{
+margin-top:20px;
+padding:20px;
+background:white;
+border-radius:10px;
+display:inline-block;
+border:3px solid red;
+}
+button{
+background-color:tan;
+}
+.navbar{
+overflow:hidden;
+display:flex;justify-content:space-around;
+padding: 0;
+margin:0;
+}
+.navbar a{
+background:black;
+color:gold;
+padding:14px 20px;
+flex:1;
+text-align:center;
+border:1px solid white;
+}
+@media screen and(max-width:600px){
+body {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+h1 {
+    font-size: 28px;
+  }
+}
+</style>
+<body>
+<header>
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="aboutCloudComputing.html">Cloud Computing</a>
+<a href="aboutCybersecurity.html">Cybersecurity</a>
+<a href="aboutAI.html">AI</a>
+<a href="aboutIT.html">IT</a>
+</div>
+</header>
+<main>
+<section class="Cloud Computing and Cybersecurity">
+<div class="container">
+<div class="img">
+<img src="https://blog.techliance.com/wp-content/uploads/What-is-Cloud-Computing-1024x611.jpg" alt="cloucomputing intro image">
+</div>
+<h1 style="padding-left:170px;text-align:center"></h1>
+  <div class="bullet-points">
+      <ul id="first-column" >
+      <h2 style="color:gold">1.Mobile:</h2>
+      <li style="background:gray">Real-time data syncing across devices</li>
+      <li style="background:gray">Reduces need for large storage on phones</li>
+      <h2 style="color:coral">2.Applications:</h2>
+      <li  style="background:tan">Scable hosting for apps</li>
+      <li  style="background:tan">Supports cross-platform compatibility</li>
+      </ul>
+      <ul id="second-column">
+      <h2 style="color:turquoise">3.Database:</h2>
+      <li style="background:silver">Centralized and reliable data management</li>
+      <li style="background:silver">Automated backups for safety</li>
+      <h2 style=" color:gold">4.Storage:</h2>
+      <li  style="background:pink">Scable storage options</li>
+      <li style="background:pink">Secure and remote data access</li>
+    </ul>
+  </div>
+  <div id="quiz-container">
+<p id="question">What does "IaaaS" stand for in cloud computing?</p>
+<div id="options">
+<button onclick="checkAnswer(this)">Infrastructure as a Service</button>
+<button onclick="checkAnswer(this)">Internet as a Service</button>
+<button onclick="checkAnswer(this)">Integration as a System</button>
+<button onclick="checkAnswer(this)">Instance and Application Services</button>
+</div>
+<p id="result"></p>
+</div>
+<script>
+function checkAnswer(button){
+const correctAnswer="Infrastructure as a Service";
+const result=document.getElementById("result");
+if(button.innerText==correctAnswer){
+result.innerText="Correct!well done.";
+result.style.color="green";
+}else{
+result.innerText="Wrong answer.Try again!";
+result.style.color="red";
+}
+}
+</script>
+</section>
+</main>
+</body>

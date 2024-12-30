@@ -1,0 +1,175 @@
+<!doctype.html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>
+Technology Trends
+</title>
+<link rel="stylesheet" href ="style.css">
+</head>
+<style>
+body{
+font-family:Sans-serif;
+background-image:url("https://png.pngtree.com/png-clipart/20201011/ourlarge/pngtree-color-highlights-abstract-light-effects-ai-characters-png-image_2362297.jpg" alt="AI related image");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+color:red;
+}
+img{
+padding-right: 70px;
+padding-left:20px;
+padding-top:100px;
+padding-bottom:100px;
+width:90%;
+height:AUTO;
+}
+.container{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+}
+ .bullet-points {
+     display:flex;
+     justify-content:space-around;
+     padding-top:70px;
+     padding-right:50px;
+}
+       }
+    .bullet-points ul {
+      padding-right:20px;
+      list-style-type: disc;
+    }
+#first-column,#second-column{
+padding:40px;
+}
+.navbar{
+overflow:hidden;
+display:flex;justify-content:space-around;
+padding: 0;
+margin:0;
+}
+.navbar a{
+background:black;
+color:gold;
+padding:14px 20px;
+flex:1;
+text-align:center;
+border:1px solid white;
+}
+button{
+padding:10px 20px;
+cursor:pointer;
+margin:10px;
+display:inline-block;
+width:100px;
+text-align:center;
+border:2px solid black;
+}
+#response-container{
+text-align:center;
+margin-top:50px;
+border:2px solid black;
+}
+#response{
+margin-top:20px;
+}
+@media screen and(max-width:600px){
+body {
+    font-size: 14px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+h1 {
+    font-size: 28px;
+  }
+}
+</style>
+<body>
+<header>
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="aboutCloudComputing.html">Cloud Computing</a>
+<a href="aboutCybersecurity.html">Cybersecurity</a>
+<a href="aboutAI[1]ss.html">AI</a>
+<a href="aboutIT.html">IT</a>
+</div>
+</header>
+<main>
+<section class="AI">
+<div class="container">
+<div class="img">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6grLVXJ8urLdHBRlAgUfovtkNTQ75URfRQg&s" alt="AI scope image">
+</div>
+  <div class="bullet-points">
+      <h1 style="text-align:center"></h1>
+      <ul id="first-column">
+      <h2 style="color:maroon;background:white">AI in Mobile Devices :"</h2>
+      <li style="background:black; color:gold">AI enhanced camera features for better photos</li>
+      <li  style="background:black; color:gold">Personalized experiences via smart assistants</li>
+      <h2 style="color:black;background:white">"AI for Business Automation:"</h2>
+      <li  style="background:black; color:gold">AI chatbots automating customer service</li>
+      <li  style="background:black; color:gold">Task optimization through AI-driven workflows</li>
+      </ul>
+      <ul id="second-column">
+      <h2 style="color:maroon;background:white">"AI in Healthcare:"</h2>
+      <li  style="background:black; color:gold">Faster,more accurate diagnostic with AI</li>
+      <li  style="background:black; color:gold">Personalized treatment based on data analysis</li>
+      <h2 style="color:maroon;background:white">"AI in content creation:"</h2>
+      <li  style="background:black; color:gold">AI tools generating text,images,and music</li>
+      <li  style="background:black; color:gold">AI-assisted video editing for creators</li>
+    </ul>
+  </div>
+       <div id="response-container">
+       <h1 style="color:maroon">Is AI dangerous?</h1>
+       <div>
+       <button onclick="showAIResponse('yes')" style="color:green;background-color:silver">Yes</button>
+       <button onclick="showAIResponse('no')" style="color:red;background-color:silver">No</button>
+       </div>
+       <p id="response" style="color:blue"></p>
+       </div>
+        <script> 
+        function showAIResponse(answer){
+        document.getElementById("response").innerText="Your response:"+answer;}
+        </script>
+</section>
+</main>
+</body>
